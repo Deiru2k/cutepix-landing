@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'lane';
+  src: url('lane.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'lane';
   color: white;
 }
 
@@ -22,11 +30,16 @@ body {
 }
 
 h1.header {
-  margin-bottom: 0;
+  letter-spacing: 8px;
+  font-weight: lighter;
+  margin-bottom: 12px;
+  font-size: 5rem;
 }
 
 h3.header {
   margin-top: 0;
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 .break {
@@ -91,12 +104,18 @@ i.icon::after {
   width: 100%;
   position: absolute;
   bottom: 0px;
-  padding-bottom: 5px;
 }
 
 .footerContent {
+  margin: 10px;
+}
+
+.footerRight {
   float: right;
-  margin-right: 10px;
+}
+
+.footerLeft {
+  float: left;
 }
 
 .footer > * > a {
