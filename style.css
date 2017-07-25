@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+.backgroundImage {
+  height: 100%;
+  background-image: url('sachiko-prog.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.backgroundShade {
+  height: 100%;
+  background-color: rgba(1, 0, 0, 0.65);
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+}
+
+h1.header {
+  margin-bottom: 0;
+}
+
+h3.header {
+  margin-top: 0;
+}
+
+.break {
+  height: 30%
+}
+
+.break::before {
+  content: '';
+}
+
+i.icon {
+  background-image: url('icon_plain.svg');
+  width: 40px;
+  display: inline-block;
+  color: white;
+  fill: currentColor;
+}
+
+i.icon::after {
+  content: '';
+}
+
+.subscribeButton {
+  background-color: 0088cc;
+  border-color: 0088cc;
+  color: white;
+  border-radius: 7px;
+  font-size: 2.5rem;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+
+.subscribeButton > a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+  line-height: normal;
+  flex-direction: column;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.footerContent {
+  float: right;
+  margin-right: 10px;
+}
+
+.footer > * > a {
+  color: white;
+  text-decoration: none;
+}
